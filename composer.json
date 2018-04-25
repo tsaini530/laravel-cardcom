@@ -1,0 +1,40 @@
+{
+    "name": "Dbws/laravel-cardcom",
+    "description": "Laravel Cardcom provides an expressive, fluent interface to Cardcom's billing services using low profile code.",
+    "keywords": [
+        "laravel",
+        "cardcom"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tarun Saini",
+            "email": "tsaini530@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "illuminate/support": "~5.4"
+    },    
+    "autoload": {
+        "psr-4": {
+            "Dbws\\Cardcom\\": "src/"
+        }
+    },    
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Dbws\\Cardcom\\CardcomServiceProvider"
+            ],
+            "aliases": {
+                "Cardcom": "Dbws\\Cardcom\\Facades\\Cardcom"
+            }
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
